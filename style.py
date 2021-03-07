@@ -14,7 +14,7 @@ def Typing():
     xl_sh = xl_bk.sheet_by_index(0)
     len = xl_sh.nrows -1
     num = random.randint(0,len)
-    #シートの中のセルの中身を表示
+    #シートの中のセルの中身を表示する
     text = xl_sh.cell(num,0).value
     teki = xl_sh.cell(num,1).value
     xl_bk = xlrd.open_workbook("waza.xlsx")
